@@ -1,0 +1,32 @@
+.gallery{
+    background-color: rgb(105, 171, 247);
+    column-count: 4;
+    column-gap: 30px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.gallery img {
+    border    : 0.2em solid #332D2A;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 255, 0.3);
+    max-width : 100%;
+    display: block;
+    height: auto;
+    margin: 30px auto;
+  }
+
+@media screen and (max-width: 1024px) {
+    .gallery{
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gallery{
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 480px) {
+    .gallery{
+        column-count: 1;
+    }
+}
